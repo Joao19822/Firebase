@@ -42,3 +42,26 @@ function listar(){
 }
 
 listar();
+
+
+
+fetch('https://devup-tmp02-default-rtdb.firebaseio.com/' + dados, {
+    method: 'DELETE',
+  })
+  .then(resposta => resposta.text())
+  .then(resposta => console.log(resposta))
+
+
+// function deletar(){
+
+//     let deletar = document.getElementById('frm_cadastro')
+
+//     fetch(url_api + 'usuario.json')
+//        .then(resposta => resposta.json())
+//        .then(dados=>{
+//         method: 'DELETE',
+//         body: JSON.stringify(dados)
+//        })
+    
+// }
+
